@@ -32,7 +32,7 @@
 			})
 		}).then(async (res) => {
 			if(res.status == 200) {
-				alert('Success');
+				window.location.replace('/');
 			}else {
 				alert(`Error ${res.status}: ${(await res.json()).error}`);
 			}
