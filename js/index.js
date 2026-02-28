@@ -74,8 +74,7 @@ fetch('https://score.nsk-score.workers.dev/get', {
         const quizContainer = document.getElementById('quiz-container');
         quizContainer.innerHTML = "";
 
-        let quizList = response.quiz;
-        quizList = [];
+        const quizList = response.quiz;
         if(quizList.length === 0) {
             document.getElementById('no-quiz-info').classList.remove("hidden");
         }else {
