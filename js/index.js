@@ -118,6 +118,7 @@ fetch('https://score.nsk-score.workers.dev/get', {
     }
 }).catch((e) => {
     console.error(e);
+    document.getElementById('loading').classList.add("hidden");
     document.getElementById('error').classList.remove('hidden');
 });
 
