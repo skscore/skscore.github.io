@@ -1,0 +1,16 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #5a5a5a;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    color: #262626;
+}
+
+#content {
+    padding-left: 200px;
+    padding-right: 200px;
+    overflow-wrap: break-word;
+}

@@ -2,6 +2,8 @@
 
 	"use strict";
 
+	
+
 	fetch('https://score.nsk-score.workers.dev/check', {
 		method: 'GET',
 		credentials: 'include'
@@ -46,5 +48,14 @@
 			alert(`Client-side Javascript error: ${err}`);
 			console.error(err);
 		});
+	});
+	document.getElementById('safe-info').addEventListener('click', (event) => {
+		document.getElementById('login-section').style.display = "none";
+		document.getElementById('safe-info-section').style.display = "";
+	});
+
+	document.getElementById('understand-btn').addEventListener('click', (event) => {
+		document.getElementById('login-section').style.display = "";
+		document.getElementById('safe-info-section').style.display = "none";
 	});
 })(jQuery);
